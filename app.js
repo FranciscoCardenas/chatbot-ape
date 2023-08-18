@@ -214,7 +214,7 @@ const main = async () => {
 
     const adapterProvider = createProvider(MetaProvider, {
         jwtToken: 'EAAVZCOTzwHAcBO5LjxXJhaQhTiUL3mT56wJo5vsYAmVrgpyeXDC2ooicdJH8iZBGhHU7pHj5Jzg5pqOr3UuEsZCxAyHoxJ65T7ATn4u4SH8akYvowOphVJhTKuHZBN5JPX0rHpWnr9qpnLgNoMYGkPCDn2NNHNkhqDMxJ9rTEtlQQceHDxHvZCfCpLrVL',
-        numberId: '116374411365078',
+        numberId: '119447597909937',
         verifyToken: 'LO_QUE_SEA',
         version: 'v17.0',
     })
