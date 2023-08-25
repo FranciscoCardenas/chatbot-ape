@@ -1,24 +1,49 @@
 [
   {
-    "ref": "f6332d30-f581-4b50-ab6f-676fd0f1d277",
-    "keyword": "a884e4a9959157dbc914149247917d69",
-    "answer": "Hola",
+    "ref": "569a9cfc-254f-4c62-bbee-cef31152d8dd",
+    "keyword": "d668ac7cf07c10f62d7ff8a8985a9b9e",
+    "answer": "2",
     "options": {},
     "from": "5213231156743",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
   },
   {
-    "ref": "6255b0b3-6dee-4c7c-9c11-a4f37162b501",
-    "keyword": "c22e4066d61d81721def9b25d8a397e8",
-    "answer": "Hola",
+    "ref": "ans_b18cd24a-f948-4f4c-825d-e03e51945596",
+    "keyword": "key_cb387737-6424-4a93-a23b-904e2dce851f",
+    "answer": "Ingresa tu numero de Cliente",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "78f41858716a521f2db5fc4437d2e5ce",
+    "from": "5213231156743"
+  },
+  {
+    "ref": "ab03ea6d-4ab2-42e3-9074-078badeb2d73",
+    "keyword": "78f41858716a521f2db5fc4437d2e5ce",
+    "answer": "28831",
     "options": {},
     "from": "5213231156743",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+    "refSerialize": "61631a04f1c08278916fbc5fc3b121e6"
   },
   {
-    "ref": "ans_cc793389-2261-4e60-88da-5ffcb6e2838a",
-    "keyword": "key_13fc7b63-1d87-434e-8a82-0bc107ec3c94",
-    "answer": "Buen dia , este es nuestro menu de opciones, enviano el numero para darte seguimiento\n👉 *1* Conocer tu numero de cliente\n👉 *2* Consulta la informacion de tus contratos\n👉 *3* Consultar el Saldo de tu contrato\n👉 *4* Pagar contrato",
+    "ref": "eb7de4ea-95ae-4f10-b0b5-d1612c64f5d4",
+    "keyword": "61631a04f1c08278916fbc5fc3b121e6",
+    "answer": "hola",
+    "options": {},
+    "from": "5213231156743",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
+  },
+  {
+    "ref": "ans_2e2b2eb0-1833-401e-add0-7b5738e313e5",
+    "keyword": "key_38ffb7de-23fd-49d0-9399-fe58991674c0",
+    "answer": "Buen dia , este es nuestro menu de opciones, Envía el número de la opción que deseas consultar. \n👉 *1* Conocer tu numero de cliente\n👉 *2* Consulta la informacion de tus contratos\n👉 *3* Consultar el Saldo de tu contrato\n👉 *4* Pagar contrato\n👉 *5* Hablar con un asesor",
     "options": {
       "media": null,
       "buttons": [],
@@ -27,7 +52,7 @@
       "delay": 0,
       "nested": [
         {
-          "ref": "key_cb97d3de-030f-4bf7-9cb5-5b56956f20ef",
+          "ref": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
           "keyword": [
             "1"
           ],
@@ -38,8 +63,8 @@
           "refSerialize": "e0b2cd1acac633ea641e2d526690d369"
         },
         {
-          "ref": "ans_5573203a-f567-4c52-8c9f-1b5b08bc74c0",
-          "keyword": "key_cb97d3de-030f-4bf7-9cb5-5b56956f20ef",
+          "ref": "ans_2f78fc8b-adc8-4abe-bba7-4583010a67ad",
+          "keyword": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
           "answer": "Por favor ingresa tu Rfc",
           "options": {
             "media": null,
@@ -51,10 +76,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "4ea8303587d5fc1bb2b0138db8d55687"
+          "refSerialize": "0d28018042f10790e20f22268b7e05ef"
         },
         {
-          "ref": "key_6258a4d5-842c-45ab-8037-77da33f96147",
+          "ref": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
           "keyword": [
             "2"
           ],
@@ -65,8 +90,8 @@
           "refSerialize": "389a29e5d1b72d14d3fa321bb058be56"
         },
         {
-          "ref": "ans_2928d80f-b073-44e2-8bdf-fcb1aadb515d",
-          "keyword": "key_6258a4d5-842c-45ab-8037-77da33f96147",
+          "ref": "ans_0439b7cd-1976-4b31-a629-dec46a0aab86",
+          "keyword": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
           "answer": "Ingresa tu numero de Cliente",
           "options": {
             "media": null,
@@ -78,10 +103,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "cbdd801876498b34fbe87a69da0ed416"
+          "refSerialize": "7d4db4e71d2bc172a15c1f32b5a3e617"
         },
         {
-          "ref": "key_53d60a93-618d-434e-8471-2b36a18a1728",
+          "ref": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
           "keyword": [
             "3"
           ],
@@ -92,8 +117,8 @@
           "refSerialize": "f527e0d58165f42aac80200dd9e494bc"
         },
         {
-          "ref": "ans_9114fda2-8d12-43bd-a3bf-e838281937a4",
-          "keyword": "key_53d60a93-618d-434e-8471-2b36a18a1728",
+          "ref": "ans_e881063d-471c-4081-86bc-67fbd0ff9227",
+          "keyword": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
           "answer": "Por favor Ingresa tu numero de contrato",
           "options": {
             "media": null,
@@ -103,7 +128,7 @@
             "delay": 0,
             "nested": [
               {
-                "ref": "key_78bb1e38-acd9-4421-b949-70719596ffa5",
+                "ref": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
                 "keyword": [
                   "saldo",
                   "siguiente"
@@ -115,8 +140,8 @@
                 "refSerialize": "1471e4f7b4b71bdda073f59bc5f06002"
               },
               {
-                "ref": "ans_b9fa0fc1-0e22-49d6-9007-18d665f8f19b",
-                "keyword": "key_78bb1e38-acd9-4421-b949-70719596ffa5",
+                "ref": "ans_fb5d3ec1-bd98-4540-a14f-340c1f0f0b7a",
+                "keyword": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
                 "answer": "En este momento tu saldo actual es de :",
                 "options": {
                   "media": null,
@@ -128,16 +153,16 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "865266bc8171163aa1303c58188d003f"
+                "refSerialize": "06846f1e71d89aff934aab6a5f1f1ba9"
               }
             ],
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "41c08513cd2be71441b9f89f8fd8cc09"
+          "refSerialize": "3079a7c9c9146e227591dccbee32788c"
         },
         {
-          "ref": "key_a7070d17-4769-4e08-8925-c5fafb3439e0",
+          "ref": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
           "keyword": [
             "4"
           ],
@@ -148,8 +173,8 @@
           "refSerialize": "14544ecc4392f95d9b995ed896ea75dc"
         },
         {
-          "ref": "ans_7077e9d4-f1ef-4975-adbb-2b909547f8ca",
-          "keyword": "key_a7070d17-4769-4e08-8925-c5fafb3439e0",
+          "ref": "ans_35d2ad60-652f-4f0a-8364-125a966dd369",
+          "keyword": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
           "answer": "Por favor ingresa el numero de tu contrato",
           "options": {
             "media": null,
@@ -159,7 +184,7 @@
             "delay": 0,
             "nested": [
               {
-                "ref": "key_b7c3dcde-148d-4317-9691-fe86d8108ef8",
+                "ref": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
                 "keyword": [
                   "pagar",
                   "siguiente"
@@ -171,8 +196,8 @@
                 "refSerialize": "9cf6e34ffd63f8da820035b16e937822"
               },
               {
-                "ref": "ans_11b43747-1375-4054-ab83-d33498fc5f45",
-                "keyword": "key_b7c3dcde-148d-4317-9691-fe86d8108ef8",
+                "ref": "ans_0fdc0313-6726-4d82-9f29-313652865747",
+                "keyword": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
                 "answer": "ficha",
                 "options": {
                   "media": null,
@@ -184,33 +209,60 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "a87322f894092e294b8cdd88e7c9b7fb"
+                "refSerialize": "6c19580b412a12e9afa5bb0345ecf1b1"
               }
             ],
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "bfba88503b6124b5f89bad3670e76421"
+          "refSerialize": "eed35a2f8bad22fd6bfacaf9d3c90daa"
+        },
+        {
+          "ref": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "keyword": [
+            "5"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "47670bebf9089082e1ec81e842012d5b"
+        },
+        {
+          "ref": "ans_28e7cd0a-1dff-4b8f-97bd-e1132c285a4f",
+          "keyword": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "answer": "Por favor Ingresa tu numero de contrato",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "03ad08dbe25e077110aa3f03731889b9"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "244e7c747a7d624e6eebaf46344894fb",
+    "refSerialize": "028887c40cca5715a18d863aa637559f",
     "from": "5213231156743"
   },
   {
-    "ref": "90104559-8a82-4982-ac57-68128a11abe1",
-    "keyword": "244e7c747a7d624e6eebaf46344894fb",
-    "answer": "1",
+    "ref": "210f4d54-e544-45b6-a80f-296e3ab6b56e",
+    "keyword": "028887c40cca5715a18d863aa637559f",
+    "answer": "2",
     "options": {},
     "from": "5213231156743",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
   },
   {
-    "ref": "ans_5573203a-f567-4c52-8c9f-1b5b08bc74c0",
-    "keyword": "key_cb97d3de-030f-4bf7-9cb5-5b56956f20ef",
-    "answer": "Por favor ingresa tu Rfc",
+    "ref": "ans_0439b7cd-1976-4b31-a629-dec46a0aab86",
+    "keyword": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
+    "answer": "Ingresa tu numero de Cliente",
     "options": {
       "media": null,
       "buttons": [],
@@ -221,20 +273,31 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "4ea8303587d5fc1bb2b0138db8d55687",
+    "refSerialize": "7d4db4e71d2bc172a15c1f32b5a3e617",
     "from": "5213231156743"
   },
   {
-    "ref": "0788c062-ec02-47d5-b8a3-e4116527ccd1",
-    "keyword": "4ea8303587d5fc1bb2b0138db8d55687",
-    "answer": "Kdjw22",
+    "ref": "9d969ff5-346b-4dbb-bf3c-249be7639033",
+    "keyword": "7d4db4e71d2bc172a15c1f32b5a3e617",
+    "answer": "28831",
     "options": {},
     "from": "5213231156743",
-    "refSerialize": "8b938a925609346e2eb6175a4af3aa05"
+    "refSerialize": "61631a04f1c08278916fbc5fc3b121e6"
   },
   {
-    "ref": "fd28ef38-e26e-4f72-a7eb-9a28d2a5bc27",
-    "answer": "No se encontraron datos del RFC *Kdjw22* . Algo mas en lo que podemos ayudarte?",
+    "ref": "5d011b5e-16c3-4cd6-a083-135aa142fec8",
+    "answer": "Contrato : *ACA904* Saldo *-$1,380.40* \nTermino Vigencia: *Agosto 31, 2024*  \nRenovación: *Septiembre 01, 2023*",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false
+    },
+    "from": "5213231156743",
+    "refSerialize": "b501ed22200ec7210218391e69c25508"
+  },
+  {
+    "ref": "9e36acd3-0694-4dfb-97f8-f5c35a0edb26",
+    "answer": "¿Algo mas en lo que podemos ayudarte?",
     "options": {
       "media": null,
       "buttons": [
@@ -248,28 +311,20 @@
       "capture": false
     },
     "from": "5213231156743",
-    "refSerialize": "91c54657fe3a7aa97fc966ddaf3cf1bf"
+    "refSerialize": "de07541e03d71bba5a4a5cd4f25f2c9e"
   },
   {
-    "ref": "d99b2a66-ddc6-47a3-9159-b832c12e9f4b",
-    "keyword": "8b938a925609346e2eb6175a4af3aa05",
-    "answer": "NO, GRACIAS",
+    "ref": "4cfe24be-bb4a-4b52-b7d9-c8924315be92",
+    "keyword": "61631a04f1c08278916fbc5fc3b121e6",
+    "answer": "SI, POR FAVOR",
     "options": {},
     "from": "5213231156743",
-    "refSerialize": "7b538b12638561ec2404a087a7b54c9b"
+    "refSerialize": "60feb2bdd2906a8a56fea8d3eab030a0"
   },
   {
-    "ref": "26bbee0d-2688-4d1c-a842-3f5f0a8163f1",
-    "keyword": "7b538b12638561ec2404a087a7b54c9b",
-    "answer": "Hola",
-    "options": {},
-    "from": "5213231156743",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
-  },
-  {
-    "ref": "ans_cc793389-2261-4e60-88da-5ffcb6e2838a",
-    "keyword": "key_13fc7b63-1d87-434e-8a82-0bc107ec3c94",
-    "answer": "Buen dia , este es nuestro menu de opciones, enviano el numero para darte seguimiento\n👉 *1* Conocer tu numero de cliente\n👉 *2* Consulta la informacion de tus contratos\n👉 *3* Consultar el Saldo de tu contrato\n👉 *4* Pagar contrato",
+    "ref": "ans_2e2b2eb0-1833-401e-add0-7b5738e313e5",
+    "keyword": "key_38ffb7de-23fd-49d0-9399-fe58991674c0",
+    "answer": "Buen dia , este es nuestro menu de opciones, Envía el número de la opción que deseas consultar. \n👉 *1* Conocer tu numero de cliente\n👉 *2* Consulta la informacion de tus contratos\n👉 *3* Consultar el Saldo de tu contrato\n👉 *4* Pagar contrato\n👉 *5* Hablar con un asesor",
     "options": {
       "media": null,
       "buttons": [],
@@ -278,7 +333,7 @@
       "delay": 0,
       "nested": [
         {
-          "ref": "key_cb97d3de-030f-4bf7-9cb5-5b56956f20ef",
+          "ref": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
           "keyword": [
             "1"
           ],
@@ -289,8 +344,8 @@
           "refSerialize": "e0b2cd1acac633ea641e2d526690d369"
         },
         {
-          "ref": "ans_5573203a-f567-4c52-8c9f-1b5b08bc74c0",
-          "keyword": "key_cb97d3de-030f-4bf7-9cb5-5b56956f20ef",
+          "ref": "ans_2f78fc8b-adc8-4abe-bba7-4583010a67ad",
+          "keyword": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
           "answer": "Por favor ingresa tu Rfc",
           "options": {
             "media": null,
@@ -302,10 +357,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "4ea8303587d5fc1bb2b0138db8d55687"
+          "refSerialize": "0d28018042f10790e20f22268b7e05ef"
         },
         {
-          "ref": "key_6258a4d5-842c-45ab-8037-77da33f96147",
+          "ref": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
           "keyword": [
             "2"
           ],
@@ -316,8 +371,8 @@
           "refSerialize": "389a29e5d1b72d14d3fa321bb058be56"
         },
         {
-          "ref": "ans_2928d80f-b073-44e2-8bdf-fcb1aadb515d",
-          "keyword": "key_6258a4d5-842c-45ab-8037-77da33f96147",
+          "ref": "ans_0439b7cd-1976-4b31-a629-dec46a0aab86",
+          "keyword": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
           "answer": "Ingresa tu numero de Cliente",
           "options": {
             "media": null,
@@ -329,10 +384,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "cbdd801876498b34fbe87a69da0ed416"
+          "refSerialize": "7d4db4e71d2bc172a15c1f32b5a3e617"
         },
         {
-          "ref": "key_53d60a93-618d-434e-8471-2b36a18a1728",
+          "ref": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
           "keyword": [
             "3"
           ],
@@ -343,8 +398,8 @@
           "refSerialize": "f527e0d58165f42aac80200dd9e494bc"
         },
         {
-          "ref": "ans_9114fda2-8d12-43bd-a3bf-e838281937a4",
-          "keyword": "key_53d60a93-618d-434e-8471-2b36a18a1728",
+          "ref": "ans_e881063d-471c-4081-86bc-67fbd0ff9227",
+          "keyword": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
           "answer": "Por favor Ingresa tu numero de contrato",
           "options": {
             "media": null,
@@ -354,7 +409,7 @@
             "delay": 0,
             "nested": [
               {
-                "ref": "key_78bb1e38-acd9-4421-b949-70719596ffa5",
+                "ref": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
                 "keyword": [
                   "saldo",
                   "siguiente"
@@ -366,8 +421,8 @@
                 "refSerialize": "1471e4f7b4b71bdda073f59bc5f06002"
               },
               {
-                "ref": "ans_b9fa0fc1-0e22-49d6-9007-18d665f8f19b",
-                "keyword": "key_78bb1e38-acd9-4421-b949-70719596ffa5",
+                "ref": "ans_fb5d3ec1-bd98-4540-a14f-340c1f0f0b7a",
+                "keyword": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
                 "answer": "En este momento tu saldo actual es de :",
                 "options": {
                   "media": null,
@@ -379,16 +434,16 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "865266bc8171163aa1303c58188d003f"
+                "refSerialize": "06846f1e71d89aff934aab6a5f1f1ba9"
               }
             ],
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "41c08513cd2be71441b9f89f8fd8cc09"
+          "refSerialize": "3079a7c9c9146e227591dccbee32788c"
         },
         {
-          "ref": "key_a7070d17-4769-4e08-8925-c5fafb3439e0",
+          "ref": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
           "keyword": [
             "4"
           ],
@@ -399,8 +454,8 @@
           "refSerialize": "14544ecc4392f95d9b995ed896ea75dc"
         },
         {
-          "ref": "ans_7077e9d4-f1ef-4975-adbb-2b909547f8ca",
-          "keyword": "key_a7070d17-4769-4e08-8925-c5fafb3439e0",
+          "ref": "ans_35d2ad60-652f-4f0a-8364-125a966dd369",
+          "keyword": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
           "answer": "Por favor ingresa el numero de tu contrato",
           "options": {
             "media": null,
@@ -410,7 +465,7 @@
             "delay": 0,
             "nested": [
               {
-                "ref": "key_b7c3dcde-148d-4317-9691-fe86d8108ef8",
+                "ref": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
                 "keyword": [
                   "pagar",
                   "siguiente"
@@ -422,8 +477,8 @@
                 "refSerialize": "9cf6e34ffd63f8da820035b16e937822"
               },
               {
-                "ref": "ans_11b43747-1375-4054-ab83-d33498fc5f45",
-                "keyword": "key_b7c3dcde-148d-4317-9691-fe86d8108ef8",
+                "ref": "ans_0fdc0313-6726-4d82-9f29-313652865747",
+                "keyword": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
                 "answer": "ficha",
                 "options": {
                   "media": null,
@@ -435,19 +490,327 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "a87322f894092e294b8cdd88e7c9b7fb"
+                "refSerialize": "6c19580b412a12e9afa5bb0345ecf1b1"
               }
             ],
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "bfba88503b6124b5f89bad3670e76421"
+          "refSerialize": "eed35a2f8bad22fd6bfacaf9d3c90daa"
+        },
+        {
+          "ref": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "keyword": [
+            "5"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "47670bebf9089082e1ec81e842012d5b"
+        },
+        {
+          "ref": "ans_28e7cd0a-1dff-4b8f-97bd-e1132c285a4f",
+          "keyword": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "answer": "Por favor Ingresa tu numero de contrato",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "03ad08dbe25e077110aa3f03731889b9"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "244e7c747a7d624e6eebaf46344894fb",
+    "refSerialize": "028887c40cca5715a18d863aa637559f",
+    "from": "5213231156743"
+  },
+  {
+    "ref": "7dbad24e-ebd9-4a49-a5ed-e23bed8a1d2b",
+    "keyword": "028887c40cca5715a18d863aa637559f",
+    "answer": "2",
+    "options": {},
+    "from": "5213231156743",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ans_0439b7cd-1976-4b31-a629-dec46a0aab86",
+    "keyword": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
+    "answer": "Ingresa tu numero de Cliente",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "7d4db4e71d2bc172a15c1f32b5a3e617",
+    "from": "5213231156743"
+  },
+  {
+    "ref": "b6a435e1-b81c-4c12-8237-c142768f8794",
+    "keyword": "7d4db4e71d2bc172a15c1f32b5a3e617",
+    "answer": "28831",
+    "options": {},
+    "from": "5213231156743",
+    "refSerialize": "61631a04f1c08278916fbc5fc3b121e6"
+  },
+  {
+    "ref": "3b1bc175-ac60-4f09-88e7-7adef5811707",
+    "answer": "Contrato : *ACA904* Saldo *-$1,380.40* \nTermino Vigencia: *Agosto 31, 2024*  \nRenovación: *Septiembre 01, 2024*",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false
+    },
+    "from": "5213231156743",
+    "refSerialize": "19f95dc6c4488e4a6160a64a182b2da7"
+  },
+  {
+    "ref": "1d1b8cea-6956-4a2c-b228-af756f7acc7c",
+    "answer": "¿Algo mas en lo que podemos ayudarte?",
+    "options": {
+      "media": null,
+      "buttons": [
+        {
+          "body": "SI, POR FAVOR"
+        },
+        {
+          "body": "NO, GRACIAS"
+        }
+      ],
+      "capture": false
+    },
+    "from": "5213231156743",
+    "refSerialize": "de07541e03d71bba5a4a5cd4f25f2c9e"
+  },
+  {
+    "ref": "14618571-1b17-4b97-b451-5d2a53bb0d06",
+    "keyword": "61631a04f1c08278916fbc5fc3b121e6",
+    "answer": "SI, POR FAVOR",
+    "options": {},
+    "from": "5213231156743",
+    "refSerialize": "60feb2bdd2906a8a56fea8d3eab030a0"
+  },
+  {
+    "ref": "ans_2e2b2eb0-1833-401e-add0-7b5738e313e5",
+    "keyword": "key_38ffb7de-23fd-49d0-9399-fe58991674c0",
+    "answer": "Buen dia , este es nuestro menu de opciones, Envía el número de la opción que deseas consultar. \n👉 *1* Conocer tu numero de cliente\n👉 *2* Consulta la informacion de tus contratos\n👉 *3* Consultar el Saldo de tu contrato\n👉 *4* Pagar contrato\n👉 *5* Hablar con un asesor",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "nested": [
+        {
+          "ref": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
+          "keyword": [
+            "1"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "e0b2cd1acac633ea641e2d526690d369"
+        },
+        {
+          "ref": "ans_2f78fc8b-adc8-4abe-bba7-4583010a67ad",
+          "keyword": "key_f750aecd-fb8e-45fa-b4bb-0bdad3b19f8c",
+          "answer": "Por favor ingresa tu Rfc",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "0d28018042f10790e20f22268b7e05ef"
+        },
+        {
+          "ref": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
+          "keyword": [
+            "2"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "389a29e5d1b72d14d3fa321bb058be56"
+        },
+        {
+          "ref": "ans_0439b7cd-1976-4b31-a629-dec46a0aab86",
+          "keyword": "key_357fe64d-78e9-48e6-a8a0-df874de7f97f",
+          "answer": "Ingresa tu numero de Cliente",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "7d4db4e71d2bc172a15c1f32b5a3e617"
+        },
+        {
+          "ref": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
+          "keyword": [
+            "3"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "f527e0d58165f42aac80200dd9e494bc"
+        },
+        {
+          "ref": "ans_e881063d-471c-4081-86bc-67fbd0ff9227",
+          "keyword": "key_6b0f5a8d-b26e-4488-a852-c92799c27f08",
+          "answer": "Por favor Ingresa tu numero de contrato",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [
+              {
+                "ref": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
+                "keyword": [
+                  "saldo",
+                  "siguiente"
+                ],
+                "options": {
+                  "sensitive": false,
+                  "regex": false
+                },
+                "refSerialize": "1471e4f7b4b71bdda073f59bc5f06002"
+              },
+              {
+                "ref": "ans_fb5d3ec1-bd98-4540-a14f-340c1f0f0b7a",
+                "keyword": "key_d9bbb92e-e599-46f7-9439-1891480d6076",
+                "answer": "En este momento tu saldo actual es de :",
+                "options": {
+                  "media": null,
+                  "buttons": [],
+                  "capture": false,
+                  "child": null,
+                  "delay": 0,
+                  "nested": [],
+                  "keyword": {},
+                  "callback": false
+                },
+                "refSerialize": "06846f1e71d89aff934aab6a5f1f1ba9"
+              }
+            ],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "3079a7c9c9146e227591dccbee32788c"
+        },
+        {
+          "ref": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
+          "keyword": [
+            "4"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "14544ecc4392f95d9b995ed896ea75dc"
+        },
+        {
+          "ref": "ans_35d2ad60-652f-4f0a-8364-125a966dd369",
+          "keyword": "key_35d02ffe-7da2-4faa-99ab-edc4a4dd706c",
+          "answer": "Por favor ingresa el numero de tu contrato",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [
+              {
+                "ref": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
+                "keyword": [
+                  "pagar",
+                  "siguiente"
+                ],
+                "options": {
+                  "sensitive": false,
+                  "regex": false
+                },
+                "refSerialize": "9cf6e34ffd63f8da820035b16e937822"
+              },
+              {
+                "ref": "ans_0fdc0313-6726-4d82-9f29-313652865747",
+                "keyword": "key_32629c88-0d98-4223-9cf2-d5dba7cb6128",
+                "answer": "ficha",
+                "options": {
+                  "media": null,
+                  "buttons": [],
+                  "capture": false,
+                  "child": null,
+                  "delay": 0,
+                  "nested": [],
+                  "keyword": {},
+                  "callback": false
+                },
+                "refSerialize": "6c19580b412a12e9afa5bb0345ecf1b1"
+              }
+            ],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "eed35a2f8bad22fd6bfacaf9d3c90daa"
+        },
+        {
+          "ref": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "keyword": [
+            "5"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "47670bebf9089082e1ec81e842012d5b"
+        },
+        {
+          "ref": "ans_28e7cd0a-1dff-4b8f-97bd-e1132c285a4f",
+          "keyword": "key_448b404e-98f3-4ad8-8bde-3e2cb197f5fa",
+          "answer": "Por favor Ingresa tu numero de contrato",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "03ad08dbe25e077110aa3f03731889b9"
+        }
+      ],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "028887c40cca5715a18d863aa637559f",
     "from": "5213231156743"
   }
 ]
