@@ -273,13 +273,12 @@ const main = async () => {
   verifyToken: 'LO_QUE_SEA',
   version: 'v17.0',
 })
-
+*/
     createBot({
         flow: adapterFlow,
         provider: adapterProvider,
         database: adapterDB,
     })
-}*/
 }
 main()
 
