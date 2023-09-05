@@ -10,6 +10,7 @@ const NumeroCliente = addKeyword(['1',  ]).addAnswer(
     ],
     {capture:true},
     ((ctx,{flowDynamic,fallBack}) =>{
+      console.log(ctx)
         const RFC =String(ctx.body).toUpperCase();  
         const apiUrl = 'https://nuevo.apexdeape.com.mx/ords/apeppdb1/xxschema_contratos/ar1/v1/RFC';
         // Configurar los headers
@@ -37,7 +38,7 @@ const NumeroCliente = addKeyword(['1',  ]).addAnswer(
             flowDynamic([{body:'Formato no valido,¿Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ],}],null,null,[RespuestaNO])
           }
           });
-        }), 
+        }), [RespuestaNO]
 )
 
 
@@ -95,7 +96,7 @@ const InformacionContrato = addKeyword(['2']).addAnswer(
       }
       });
 }),
-    
+    [RespuestaNO]
 )
 
 
@@ -136,7 +137,7 @@ const SaldoContrato = addKeyword(['3']).addAnswer(
           }
           });
         }), 
-    [RespuestaSaldo]
+    [RespuestaNO]
 )
 
 
@@ -147,53 +148,65 @@ const PagarContrato = addKeyword(['4']).addAnswer(
     {capture:true
       },
     ((ctx,{flowDynamic,fallBack}) =>{
-        const NUMERO_CONTRATO =String(ctx.body).toUpperCase();  
-        const apiUrl = 'https://nuevo.apexdeape.com.mx/ords/apeppdb1/xxschema_contratos/ar1/v1//Ficha_Pago_Numero_Contrato';
-        
-        // Configurar los headers
-        const headers = new Headers();
-        headers.append('NUMERO_CONTRATO', NUMERO_CONTRATO);
-        
-        // Configurar la solicitud
-        const requestOptions = {
-          method: 'GET',
-          headers: headers,
-        };
-        
-        // Hacer la solicitud
-        fetch(apiUrl, requestOptions)
-          .then(response => response.json())
-          .then(data => {
-            //console.log(data.items[0].cliente_id)
-       if(data.items.length==0){
-        flowDynamic([{
-         body:'No se encontraron datos del contrato *'+ NUMERO_CONTRATO+'* . Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ]}],null,null,[RespuestaNO])
-       }else{ 
-        flowDynamic([{body:'El saldo actual de tu contrato *'+NUMERO_CONTRATO+'* locales ('+ data.items[0].locales +') es *'+data.items[0].suma.split(/\s+/).join('')+'*. \n \n'
-        + 'Para realizar tu pago por *transferencia* \n'
-        +'*Banco:* ' + data.items[0].banco.split(/\s+/).join('')+' \n'
-        +'*Referencia bancaria :* ' + data.items[0].referencia_bancaria+' \n'
-        +'*Clave interbancaria :* ' + data.items[0]['clave interbancaria']+' \n\n'
-       
-        + 'Para realizar tu pago por *ventanilla* \n'
-        +'*Banco:* ' + data.items[0].banco.split(/\s+/).join('')+' \n'
-        +'*Referencia bancaria:* ' + data.items[0].ref+' \n'
-        +'*Clave servicio:* ' + data.items[0]['clave de servicio']+' \n \n'
+      var today = new Date();
+      var day = today.getDate();
+      console.log(day)
+if (day >5 ){
+  const NUMERO_CONTRATO =String(ctx.body).toUpperCase();  
+  const apiUrl = 'https://nuevo.apexdeape.com.mx/ords/apeppdb1/xxschema_contratos/ar1/v1//Ficha_Pago_Numero_Contrato';
+  
+  // Configurar los headers
+  const headers = new Headers();
+  headers.append('NUMERO_CONTRATO', NUMERO_CONTRATO);
+  
+  // Configurar la solicitud
+  const requestOptions = {
+    method: 'GET',
+    headers: headers,
+  };
+  
+  // Hacer la solicitud
+  fetch(apiUrl, requestOptions)
+    .then(response => response.json())
+    .then(data => {
+      //console.log(data.items[0].cliente_id)
+ if(data.items.length==0){
+  flowDynamic([{
+   body:'No se encontraron datos del contrato *'+ NUMERO_CONTRATO+'* . Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ]}],null,null,[RespuestaNO])
+ }else{ 
+  flowDynamic([{body:'El saldo actual de tu contrato *'+NUMERO_CONTRATO+'* locales ('+ data.items[0].locales +') es *'+data.items[0].suma.split(/\s+/).join('')+'*. \n \n'
+  + 'Para realizar tu pago por *transferencia* \n'
+  +'*Banco:* ' + data.items[0].banco.split(/\s+/).join('')+' \n'
+  +'*Referencia bancaria :* ' + data.items[0].referencia_bancaria+' \n'
+  +'*Clave interbancaria :* ' + data.items[0]['clave interbancaria']+' \n\n'
+ 
+  + 'Para realizar tu pago por *ventanilla* \n'
+  +'*Banco:* ' + data.items[0].banco.split(/\s+/).join('')+' \n'
+  +'*Referencia bancaria:* ' + data.items[0].ref+' \n'
+  +'*Clave servicio:* ' + data.items[0]['clave de servicio']+' \n \n'
+
+ 
+  +'*Cantidad a pagar :* ' + data.items[0].saldo.split(/\s+/).join('')+' \n'
+  +'*Complementos :* ' + data.items[0].total.split(/\s+/).join('')+' \n'
+  +'*Total :* ' + data.items[0].suma.split(/\s+/).join('')+' \n \n'+
+  '¿Algo mas en lo que te podemos ayudar?'
+   ,buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' }]}],null,null,[RespuestaNO])}})
+    .catch(error => {
+    console.log(error.name)
+    if(error.name='SyntaxError'){
+      flowDynamic([{body:'No se encontraron datos del contrato '+NUMERO_CONTRATO+',¿Algo mas en lo que podemos ayudarte?',  buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ],}],null,null,[RespuestaNO])
+    }
+    });
+
+}{
+  flowDynamic([{body:'⚠️ Te recordamos que la información de tu(s) contrato(s) estará disponible para consulta a partir del día 6 de cada mes. ¡Gracias por tu comprensión!',  buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ],}],null,null,[RespuestaNO])
+
+}
+
 
        
-        +'*Cantidad a pagar :* ' + data.items[0].saldo.split(/\s+/).join('')+' \n'
-        +'*Complementos :* ' + data.items[0].total.split(/\s+/).join('')+' \n'
-        +'*Total :* ' + data.items[0].suma.split(/\s+/).join('')+' \n \n'+
-        '¿Algo mas en lo que te podemos ayudar?'
-         ,buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' }]}],null,null,[RespuestaNO])}})
-          .catch(error => {
-          console.log(error.name)
-          if(error.name='SyntaxError'){
-            flowDynamic([{body:'No se encontraron datos del contrato '+NUMERO_CONTRATO+',¿Algo mas en lo que podemos ayudarte?',  buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ],}],null,null,[RespuestaNO])
-          }
-          });
         }), 
-    [pagar]
+    [RespuestaNO]
 )
 
 //OPCION 5 
@@ -232,7 +245,7 @@ const contactoplaza = addKeyword(['5']).addAnswer(
         }
         });
       }), 
-  
+  [RespuestaNO]
 )
 
 
@@ -265,10 +278,10 @@ const main = async () => {
         version: 'v17.0',
     })
 
-
+/*
 // pruebas
-/*const adapterProvider = createProvider(MetaProvider, {
-  jwtToken: 'EAAMtNDakSugBAHZBWnT2MEyZCb8SZAmkuEOzic6Km0ZBUzX1pts7JQeMOd4gskpSJRehgWgDxF5HAqU6EBFz7lmO9bWWlQzfUv2esZBAFcuUfU3iJsh4CFq26CA9rkHpfWjeiRqOkp4sIPkmPXs6sCGniYhkgmq2eVAlA8NuWHfsxFagKgLVz',
+const adapterProvider = createProvider(MetaProvider, {
+  jwtToken: 'EAALnj1ahRWsBO2OtRUPl09HmoLBrJmwG0cdBJlxK9VpnRtUXl9jzfilurmK19zEhtbF1nkxR9F94FRUZCZBZBDGdd1txS5DUuxGUs0MEZAXqj2Sjp1bXuppbRg3Vrs7pDr92t0R3qd9ZBPbW1IFzLiarykdaBoZC6INBVM532Ou3EwDEZAGoMFH8MGZAkdsJ9rWFMCb1J6ReJgf6bTZB9betZC2AFKELc6Oj3uOFgOMcgF4K4ZD',
   numberId: '102089836052786',
   verifyToken: 'LO_QUE_SEA',
   version: 'v17.0',
