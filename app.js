@@ -332,7 +332,7 @@ const flowPrincipal = addKeyword(['Hola','SI, POR FAVOR','Buen dia','Buenos dias
 const main = async () => {
     const adapterDB = new JsonFileAdapter()
     const adapterFlow = createFlow([flowPrincipal])
-/*
+
     //Produccion
     const adapterProvider = createProvider(MetaProvider, {
         jwtToken: 'EAAVZCOTzwHAcBO5LjxXJhaQhTiUL3mT56wJo5vsYAmVrgpyeXDC2ooicdJH8iZBGhHU7pHj5Jzg5pqOr3UuEsZCxAyHoxJ65T7ATn4u4SH8akYvowOphVJhTKuHZBN5JPX0rHpWnr9qpnLgNoMYGkPCDn2NNHNkhqDMxJ9rTEtlQQceHDxHvZCfCpLrVL',
@@ -340,8 +340,8 @@ const main = async () => {
         verifyToken: 'LO_QUE_SEA',
         version: 'v17.0',
     })
-*/
 
+/*
 // pruebas
 const adapterProvider = createProvider(MetaProvider, {
   jwtToken: 'EAALnj1ahRWsBO5qq7mtLo59R7SUuXgqTWFEVtfEtcU1pyHPlvXQE0dsjQqkDk6jivgkAUKFV9c72XW2h3AkoZBkhPXMlodT5AOY7rekGZBlBZBlZA8lBt5ZBFHenwmQAkTnIZAKV78PpIUW0O5H8jqtoMGN6GSExU7z1S0cuRImX4YqQcc5m3wtEqvMZBZAqKfaYUKJ5BVCFGQyCInJM4iXBPLH1CSehXEMRKHBcIf0ZCgT8ZD',
@@ -349,6 +349,8 @@ const adapterProvider = createProvider(MetaProvider, {
   verifyToken: 'LO_QUE_SEA',
   version: 'v17.0',
 })
+
+*/
 
     createBot({
         flow: adapterFlow,
