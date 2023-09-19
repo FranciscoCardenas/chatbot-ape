@@ -26,7 +26,9 @@ function log(numero,mensaje,msg_bot,accion,opcion){
 }
 
 // Opcion 1
-const RespuestaNO= addKeyword(['NO, GRACIAS', ]).addAnswer(['Que tengas un excelente dia'])
+const RespuestaNO= addKeyword(['NO, GRACIAS', ]).addAnswer(['Que tengas un excelente dia'],  {capture:true})
+
+const RespuestaNO1= addKeyword(['NO, GRACIAS', ]).addAnswer(['Que tengas un excelente dia'])
 const NumeroCliente = addKeyword(['1',  ]).addAnswer(
     [
         'Por favor ingresa tu Rfc',   
@@ -51,11 +53,11 @@ const NumeroCliente = addKeyword(['1',  ]).addAnswer(
           .then(response => response.json())
           .then(data => { 
        if(data.items.length==0){
-        flowDynamic([{body:'No se encontraron datos del RFC *'+ ctx.body+'* . Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ]}],null,null,[RespuestaNO])
+        flowDynamic([{body:'No se encontraron datos del RFC *'+ ctx.body+'* . Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' } ]}],null,null,)
         //log(ctx.from,ctx.body,'No se encontraron datos del RFC *'+ ctx.body+'*','CONSULTA DEL NUMERO DEL CLIENTE','1')
 
       }else{ 
-        flowDynamic([{body:'Tu numero de cliente es *'+data.items[0].cliente_id+'*, ¿Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' }]}],null,null,[RespuestaNO])
+        flowDynamic([{body:'Tu numero de cliente es *'+data.items[0].cliente_id+'*, ¿Algo mas en lo que podemos ayudarte?', buttons: [{ body: 'SI, POR FAVOR' }, { body: 'NO, GRACIAS' }]}],null,null,)
         //log(ctx.from,ctx.body,'Tu numero de cliente es *'+data.items[0].cliente_id+'*','CONSULTA DEL NUMERO DEL CLIENTE','1')      
       
       }
@@ -312,7 +314,7 @@ const contactoplaza = addKeyword(['5']).addAnswer(
 )
 
 
-const flowPrincipal = addKeyword(['Hola','SI, POR FAVOR','Buen dia','Buenos dias','buenos días','buenas noches','buenas tardes'])
+const flowPrincipal = addKeyword(['^(?!NO, GRACIAS$).*'])
    
     .addAnswer(
         [
@@ -331,8 +333,8 @@ const flowPrincipal = addKeyword(['Hola','SI, POR FAVOR','Buen dia','Buenos dias
 
 const main = async () => {
     const adapterDB = new JsonFileAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
-
+    const adapterFlow = createFlow([flowPrincipal,RespuestaNO])
+ 
     //Produccion
     const adapterProvider = createProvider(MetaProvider, {
         jwtToken: 'EAAVZCOTzwHAcBO5LjxXJhaQhTiUL3mT56wJo5vsYAmVrgpyeXDC2ooicdJH8iZBGhHU7pHj5Jzg5pqOr3UuEsZCxAyHoxJ65T7ATn4u4SH8akYvowOphVJhTKuHZBN5JPX0rHpWnr9qpnLgNoMYGkPCDn2NNHNkhqDMxJ9rTEtlQQceHDxHvZCfCpLrVL',
@@ -341,16 +343,16 @@ const main = async () => {
         version: 'v17.0',
     })
 
-/*
-// pruebas
+ 
+/*/ pruebas
 const adapterProvider = createProvider(MetaProvider, {
-  jwtToken: 'EAALnj1ahRWsBO5qq7mtLo59R7SUuXgqTWFEVtfEtcU1pyHPlvXQE0dsjQqkDk6jivgkAUKFV9c72XW2h3AkoZBkhPXMlodT5AOY7rekGZBlBZBlZA8lBt5ZBFHenwmQAkTnIZAKV78PpIUW0O5H8jqtoMGN6GSExU7z1S0cuRImX4YqQcc5m3wtEqvMZBZAqKfaYUKJ5BVCFGQyCInJM4iXBPLH1CSehXEMRKHBcIf0ZCgT8ZD',
+  jwtToken: 'EAALnj1ahRWsBO8ciAARN6UW2VyQf0rhPQaVHhpWZAPDvYgypuZAlFSIDa0JiIhSP4ltlYXd286rS5d1ZCd2WmUgVpyObHqueLDgqqdLbmXD85EEXZAIQ2N29crczl8z1hJMr5y4rBvcmNCrkoK9M5tMdSTEXUYjG1k9crlym69UDnkRXZB04ZBbbLZBZC30SKtT3YPJ3YL4tSGECWarZCIYoxb13aWom8evQPZAfew3RIf1R4ZD',
   numberId: '102089836052786',
   verifyToken: 'LO_QUE_SEA',
   version: 'v17.0',
-})*/
+})
 
-
+*/
     createBot({
         flow: adapterFlow,
         provider: adapterProvider,
